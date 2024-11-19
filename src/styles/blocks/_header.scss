@@ -1,0 +1,24 @@
+.header {
+  padding-top: 12px;
+  padding-bottom: 73px
+}
+
+.header_inner {
+  @include inner;
+}
+
+.header_row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header_logo {
+  margin-right: auto;
+  display: inline-block;
+}
+
+.header_phone {
+  margin-left: 207px;
+  text-decoration: none;
+  color: $color-dark;
+}
