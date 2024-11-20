@@ -1,5 +1,5 @@
 .promo {
-
+  padding-bottom: 120px;
 }
 
 .promo_inner {
@@ -25,4 +25,18 @@
   font-weight: 400;
   line-height: 21px;
   color: $color-dark;
+}
+
+.promo_text {
+  margin-top: 40px;
+  display: inline-block;
+  margin-bottom: 232px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.promo_visual {
+  width: 100%;
 }
