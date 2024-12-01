@@ -1,0 +1,42 @@
+.reviews {
+  padding-bottom: 120px;
+}
+
+.reviews_inner {
+  @include inner;
+}
+
+.reviews_title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 66.24px;
+}
+
+.reviews_list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.reviews_item {
+  flex-basis: 33.33%;
+  padding: 40px 40px 92px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.reviews_icon {
+  margin-bottom: 32px;
+}
+
+.reviews_name {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.84px;
+}
