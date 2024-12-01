@@ -1,0 +1,21 @@
+.projects {
+  padding-bottom: 120px;
+}
+
+.projects_inner {
+  @include inner;
+}
+
+.projects_title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 66.24px;
+}
+
+.projects_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}

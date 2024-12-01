@@ -1,0 +1,23 @@
+.card_content {
+  position: relative;
+  flex-basis: calc(33.33% - 40px / 2);
+}
+
+.card_visual {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_text {
+  padding: 22px 20px 22px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  background-color: rgba(0, 0, 0, .4);
+  color: #fff;
+}
