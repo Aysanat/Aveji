@@ -1,0 +1,29 @@
+.footer {
+  padding-bottom: 16px;
+}
+
+.footer_inner {
+  @include inner
+}
+
+.footer_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer_info {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_list {
+  display: flex;
+  column-gap: 40px;
+  list-style: none;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #000;
+}
