@@ -1,0 +1,37 @@
+.order {
+  padding-bottom: 120px;
+}
+
+.order_inner {
+  @include inner;
+}
+
+.order_row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 136px;
+}
+
+.order_visual {
+  width: 562px;
+  height: 566px;
+}
+
+.order_image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order_half {
+  display: flex;
+  flex-direction: column;
+}
+
+.order_title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 66.24px;
+}
