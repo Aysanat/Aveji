@@ -10,17 +10,31 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer_info {
   text-decoration: none;
   color: #000;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 28px;
+  }
 }
 
 .footer_list {
   display: flex;
   column-gap: 40px;
   list-style: none;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 24px;
+  }
 }
 
 .footer_link {

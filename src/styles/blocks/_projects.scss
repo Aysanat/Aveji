@@ -12,14 +12,7 @@
 
 .projects_title {
   margin-bottom: 32px;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 66.24px;
-
-  @media (max-width: $mobile-max) {
-    font-size: 28px;
-    line-height: 38px;
-  }
+  @include title;
 }
 
 .projects_cards {

@@ -46,6 +46,10 @@
   line-height: 21px;
   color: $color-dark;
 
+  &:hover {
+    color: $color-hover;
+  }
+
   @media (max-width: $mobile-max) {
     margin-bottom: 24px;
   }
