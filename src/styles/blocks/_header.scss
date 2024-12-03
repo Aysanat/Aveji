@@ -60,10 +60,10 @@
     position: relative;
     border: 0;
     border-top: 1px solid $color-dark;
-    border-bottom: 1px solid $color-dark;
+    //border-bottom: 1px solid $color-dark;
     background-color: inherit;
 
-    &::after {
+    &::before {
       content: '';
       margin: auto;
       position: absolute;
@@ -73,6 +73,18 @@
       bottom: 0;
       right: 0;
       left: 0;
+      display: block;
+      background-color: $color-dark;
+    }
+
+    &::after {
+      content: '';
+      margin: auto;
+      position: absolute;
+      width: 14px;
+      height: 1px;
+      bottom: 0;
+      right: 0;
       display: block;
       background-color: $color-dark;
     }
