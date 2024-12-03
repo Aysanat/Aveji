@@ -1,4 +1,6 @@
 @mixin inner {
-    max-width: 1278px;
+    max-width: 1278px + 32px;
+    padding-right: 16px;
+    padding-left: 16px;
     margin: 0 auto;
 }

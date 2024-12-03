@@ -13,3 +13,10 @@ $color-dark: #212529;
 // indents
 
 // breakpoints
+
+$mobile: 320px;
+$tablet: 768px;
+$desctop: 1280px;
+
+$mobile-max: $tablet - 1px;
+$tablet-max: $desctop - 1px;

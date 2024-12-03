@@ -4,6 +4,10 @@
   font-weight: 400;
   line-height: 21px;
   color: $color-dark;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .menu_list {

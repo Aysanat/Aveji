@@ -1,5 +1,9 @@
 .projects {
   padding-bottom: 120px;
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 48px;
+  }
 }
 
 .projects_inner {
@@ -11,6 +15,11 @@
   font-size: 48px;
   font-weight: 400;
   line-height: 66.24px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 .projects_cards {
@@ -18,4 +27,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media (max-width: $mobile-max) {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }

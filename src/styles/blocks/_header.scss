@@ -1,6 +1,11 @@
 .header {
   padding-top: 12px;
-  padding-bottom: 73px
+  padding-bottom: 73px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
 }
 
 .header_inner {

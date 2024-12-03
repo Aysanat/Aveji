@@ -1,5 +1,9 @@
 .steps {
   padding-bottom: 120px;
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 48px;
+  }
 }
 
 .steps_inner {
@@ -10,16 +14,30 @@
   display: flex;
   flex-direction: row;
   column-gap: 136px;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .steps_block {
   width: 50%;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }
 
 .steps_title {
   font-size: 48px;
   font-weight: 400;
   line-height: 66.24px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 .steps_text {
@@ -27,6 +45,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 28px;
+  }
 }
 
 .steps_list {
@@ -34,6 +56,10 @@
   flex-direction: column;
   row-gap: 24px;
   list-style: none;
+
+  @media (max-width: $mobile-max) {
+    row-gap: 20px;
+  }
 }
 
 .steps_item {
@@ -42,6 +68,11 @@
   align-items: flex-start;
   column-gap: 20px;
   border-bottom: 1px solid #000;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .steps_heading {
@@ -50,11 +81,20 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 49.68px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .steps_desc {
   width: 50%;
   padding-bottom: 24px;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }
 
 
