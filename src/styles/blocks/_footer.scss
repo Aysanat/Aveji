@@ -20,7 +20,7 @@
 
 .footer_info {
   text-decoration: none;
-  color: #000;
+  color: $color-dark;
 
   @media (max-width: $mobile-max) {
     margin-bottom: 28px;
@@ -39,5 +39,5 @@
 
 .footer_link {
   text-decoration: none;
-  color: #000;
+  color: $color-dark;
 }

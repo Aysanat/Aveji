@@ -27,7 +27,7 @@
   width: 100%;
   position: absolute;
   text-align: left;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba($color-dark, .5);
   color: #fff;
 
   @media (max-width: $mobile-max) {
