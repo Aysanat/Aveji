@@ -49,6 +49,10 @@
     color: $color-hover;
   }
 
+  &.click {
+    color: $color-click;
+  }
+
   @media (max-width: $mobile-max) {
     margin-bottom: 24px;
   }

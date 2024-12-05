@@ -37,6 +37,11 @@
     background-color: $color-hover;
   }
 
+  &.click {
+    color: $color-dark;
+    background-color: $color-click;
+  }
+
   @media (max-width: $mobile-max) {
     width: 50%;
   }
