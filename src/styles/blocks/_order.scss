@@ -17,8 +17,7 @@
 }
 
 .order_visual {
-  width: 562px;
-  height: 566px;
+  width: 100%;
 
   @media (max-width: $mobile-max) {
     display: none;
@@ -34,6 +33,7 @@
 
 .order_half {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
 }
 

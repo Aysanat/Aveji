@@ -1,6 +1,6 @@
 .card_content {
   position: relative;
-  flex-basis: calc(33.33% - 40px / 2);
+  flex-basis: calc(33.33% - 40px / 3);
 
   @media (max-width: $mobile-max) {
     flex-basis: auto;

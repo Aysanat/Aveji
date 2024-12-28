@@ -11,14 +11,13 @@
 }
 
 .reviews_title {
-  margin-bottom: 32px;
   @include title;
+  margin-bottom: 32px;
 }
 
 .reviews_list {
   display: flex;
-  flex-direction: row;
-  column-gap: 20px;
+  gap: 20px;
   list-style: none;
 
   @media (max-width: $mobile-max) {
@@ -28,7 +27,7 @@
 }
 
 .reviews_item {
-  flex-basis: 33.33%;
+  flex-basis: calc(33.33% - 40px / 3);
   padding: 40px 40px 92px 40px;
   display: flex;
   flex-direction: column;

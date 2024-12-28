@@ -12,8 +12,7 @@
 
 .about_row {
   display: flex;
-  flex-direction: row;
-  column-gap: 125px;
+  gap: 20px;
 
   @media (max-width: $mobile-max) {
     flex-direction: column;
@@ -21,8 +20,8 @@
   }
 }
 
-.about_block {
-  width: 50%;
+.about_half {
+  flex-basis: calc(50% - 20px / 2);
 
   @media (max-width: $mobile-max) {
     width: 100%;
