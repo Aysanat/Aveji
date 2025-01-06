@@ -1,10 +1,14 @@
 .header {
-  padding-top: 12px;
-  padding-bottom: 73px;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 12px 0 12px;
+  background-color: #fff;
 
   @media (max-width: $mobile-max) {
-    padding-top: 8px;
-    padding-bottom: 20px;
+    padding: 8px 0 8px;
   }
 }
 
