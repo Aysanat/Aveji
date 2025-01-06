@@ -1,7 +1,7 @@
 .order {
   padding-bottom: 120px;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     padding-bottom: 48px;
   }
 }
@@ -13,13 +13,17 @@
 .order_row {
   display: flex;
   flex-direction: row;
-  column-gap: 136px;
+  gap: 136px;
+
+  @media (max-width: $tablet-max) {
+    gap: 20px;
+  }
 }
 
 .order_visual {
   width: 100%;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     display: none;
   }
 }
@@ -32,9 +36,14 @@
 }
 
 .order_half {
+  flex-basis: 50%;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 100%;
+  }
 }
 
 .order_title {

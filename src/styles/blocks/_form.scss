@@ -4,6 +4,10 @@
   flex-direction: column;
   gap: 16px;
 
+  @media (max-width: $tablet-max) {
+    margin-top: 52px;
+  }
+
   @media (max-width: $mobile-max) {
     margin-top: 32px;
   }
@@ -26,6 +30,10 @@
 .form_field-btn {
   margin-top: 16px;
   width: 33.33%;
+
+  @media (max-width: $tablet-max) {
+    width: 25%;
+  }
 
   @media (max-width: $mobile-max) {
     width: 50%;

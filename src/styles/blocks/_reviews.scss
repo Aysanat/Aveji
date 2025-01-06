@@ -1,7 +1,7 @@
 .reviews {
   padding-bottom: 120px;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     padding-bottom: 48px;
   }
 }
@@ -20,6 +20,10 @@
   gap: 20px;
   list-style: none;
 
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+  }
+
   @media (max-width: $mobile-max) {
     flex-direction: column;
     row-gap: 20px;
@@ -35,8 +39,9 @@
   text-align: center;
   border: 1px solid #000;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     padding: 32px 32px 36px 32px;
+    flex-basis: calc(50% - 20px / 2);
   }
 }
 

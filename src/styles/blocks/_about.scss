@@ -1,6 +1,10 @@
 .about {
   padding-bottom: 120px;
 
+  @media (max-width: $tablet-max) {
+    padding-bottom: 48px;
+  }
+
   @media (max-width: $mobile-max) {
     padding-bottom: 48px;
   }
