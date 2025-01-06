@@ -1,13 +1,15 @@
-.card_content {
+.card {
+  overflow-y: hidden;
   position: relative;
   flex-basis: calc(33.33% - 40px / 3);
 
   @media (max-width: $mobile-max) {
     flex-basis: auto;
+    overflow-y: initial;
   }
 }
 
-.card_visual {
+.card_image {
   display: block;
   width: 100%;
   background-position: center;
@@ -20,17 +22,27 @@
   }
 }
 
-.card_text {
-  padding: 22px 20px 22px;
-  bottom: 0;
+.card_title {
+  visibility: hidden;
+  padding: 22px 0 22px 20px;
+  // bottom: 0;
   left: 0;
   width: 100%;
   position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   text-align: left;
   background-color: rgba($color-dark, .5);
   color: #fff;
+  transition: .3s linear;
 
   @media (max-width: $mobile-max) {
-    padding: 11px 12px;
+    padding: 11px 0 11px 12px;
   }
+}
+
+.card:hover .card_title {
+  transform: translateY(-100%);
+  visibility: visible;
 }

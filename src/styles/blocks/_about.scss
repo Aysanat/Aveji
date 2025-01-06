@@ -21,7 +21,7 @@
 }
 
 .about_half {
-  flex-basis: calc(50% - 20px / 2);
+  flex-basis: calc(50% - 40px / 2);
 
   @media (max-width: $mobile-max) {
     width: 100%;
