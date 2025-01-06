@@ -1,6 +1,10 @@
 .promo {
   padding: 148px 0 120px;
 
+  @media (max-width: $tablet-max) {
+    padding: 120px 0 48px;
+  }
+
   @media (max-width: $mobile-max) {
     padding: 70px 0 48px;
   }
@@ -11,22 +15,34 @@
 }
 
 .promo_top {
+  margin-bottom: 40px;
   display: flex;
   align-items: flex-end;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 20px;
+  }
 }
 
 .promo_title {
   margin-right: auto;
-  margin-bottom: 40px;
   display: inline-block;
   flex-shrink: 0;
   font-size: 72px;
   font-weight: 400;
   line-height: 86px;
 
+  @media (max-width: $tablet-max) {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
   @media (max-width: $mobile-max) {
     margin-right: 0;
-    margin-bottom: 20px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -34,7 +50,6 @@
 
 .promo_btn {
   display: block;
-  margin-bottom: 40px;
   flex-shrink: 0;
   font-size: 18px;
   font-weight: 400;
@@ -67,28 +82,37 @@
 
 .promo_row {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 20px;
 
   @media (max-width: $mobile-max) {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
 
 .promo_half {
   flex-basis: calc(50% - 20px / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .promo_text {
   display: inline-block;
-  margin-bottom: 232px;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 
+  @media (max-width: $tablet-max) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
   @media (max-width: $mobile-max) {
     margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
   }
 }
 

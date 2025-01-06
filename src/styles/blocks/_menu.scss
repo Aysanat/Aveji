@@ -5,7 +5,7 @@
   line-height: 21px;
   color: $color-dark;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     display: none;
   }
 }
