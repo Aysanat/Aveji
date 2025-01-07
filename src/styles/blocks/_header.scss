@@ -1,9 +1,9 @@
 .header {
-  z-index: 1000;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
+  // z-index: 1000;
+  // width: 100%;
+  // top: 0;
+  // left: 0;
+  // position: fixed;
   padding: 12px 0 12px;
   background-color: #fff;
 
@@ -42,7 +42,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     width: 50px;
     height: 54px;
   }
@@ -66,46 +66,51 @@
 .header_burger {
   display: none;
 
+
   @media (max-width: $tablet-max) {
+    right: 0;
+    position: fixed;
     display: block;
-    width: 34px;
-    height: 22px;
-    position: relative;
-    border: 0;
-    border-top: 2px solid $color-dark;
-    //border-bottom: 1px solid $color-dark;
-    background-color: inherit;
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
 
-    &::before {
-      content: '';
+    .burger {
       margin: auto;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      display: block;
-      background-color: $color-dark;
+      position: relative;
+      width: 24px;
+      height: 12px;
+      background-color: inherit;
     }
 
-    &::after {
-      content: '';
-      margin: auto;
+    .span_1 {
       position: absolute;
-      width: 18px;
+      display: block;
+      width: 24px;
       height: 1px;
-      bottom: 0;
-      right: 0;
-      display: block;
-      background-color: $color-dark;
+      background-color: black;
     }
 
-  }
+    .span_2 {
+      top: 50%;
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 1px;
+      background-color: black;
+    }
 
-  @media (max-width: $mobile-max) {
-    width: 24px;
-    height: 12px;
+    .span_3 {
+      right: 0;
+      top: 100%;
+      position: absolute;
+      display: block;
+      width: 14px;
+      height: 1px;
+      background-color: black;
+    }
   }
 }

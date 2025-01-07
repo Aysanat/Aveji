@@ -8,13 +8,44 @@
   @media (max-width: $tablet-max) {
     display: none;
   }
+
+  &.menu-burger {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+  }
 }
 
 .menu_list {
   list-style: none;
+
+  &.menu_list-burger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
-.menu_item a {
+.menu_link {
   text-decoration: none;
   color: $color-dark;
+}
+
+.menu_fade {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-dark, .5);
+}
+
+.menu_wrap {
+  padding-left: 10px;
+  margin-left: auto;
+  width: 40%;
+  height: 100%;
+  background-color: #ececec;
 }

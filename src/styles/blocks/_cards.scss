@@ -1,5 +1,5 @@
 .card {
-  overflow-y: hidden;
+  overflow: hidden;
   position: relative;
   flex-basis: calc(33.33% - 40px / 3);
 
@@ -19,11 +19,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: .3s;
 
   @media (max-width: $mobile-max) {
     width: auto;
     height: 328px;
   }
+}
+
+.card:hover .card_image {
+  transform: scale(1.1);
 }
 
 .card_title {
@@ -49,4 +54,9 @@
 .card:hover .card_title {
   transform: translateY(-100%);
   visibility: visible;
+}
+
+.card_link {
+  position: absolute;
+  inset: 0;
 }
